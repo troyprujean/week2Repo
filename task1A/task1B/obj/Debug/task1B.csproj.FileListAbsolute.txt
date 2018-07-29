@@ -1,0 +1,6 @@
+C:\Users\9930285\Desktop\week2Repo\task1A\task1B\bin\Debug\task1B.exe.config
+C:\Users\9930285\Desktop\week2Repo\task1A\task1B\bin\Debug\task1B.exe
+C:\Users\9930285\Desktop\week2Repo\task1A\task1B\bin\Debug\task1B.pdb
+C:\Users\9930285\Desktop\week2Repo\task1A\task1B\obj\Debug\task1B.csproj.CoreCompileInputs.cache
+C:\Users\9930285\Desktop\week2Repo\task1A\task1B\obj\Debug\task1B.exe
+C:\Users\9930285\Desktop\week2Repo\task1A\task1B\obj\Debug\task1B.pdb

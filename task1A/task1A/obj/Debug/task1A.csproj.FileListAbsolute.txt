@@ -1,0 +1,7 @@
+C:\Users\9930285\Desktop\week2Repo\task1A\task1A\bin\Debug\task1A.exe.config
+C:\Users\9930285\Desktop\week2Repo\task1A\task1A\bin\Debug\task1A.exe
+C:\Users\9930285\Desktop\week2Repo\task1A\task1A\bin\Debug\task1A.pdb
+C:\Users\9930285\Desktop\week2Repo\task1A\task1A\obj\Debug\task1A.csprojResolveAssemblyReference.cache
+C:\Users\9930285\Desktop\week2Repo\task1A\task1A\obj\Debug\task1A.csproj.CoreCompileInputs.cache
+C:\Users\9930285\Desktop\week2Repo\task1A\task1A\obj\Debug\task1A.exe
+C:\Users\9930285\Desktop\week2Repo\task1A\task1A\obj\Debug\task1A.pdb
