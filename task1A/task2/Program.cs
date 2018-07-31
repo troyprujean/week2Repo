@@ -21,31 +21,17 @@ namespace task2
         }
     }
 
-    class CircleMethods
-    {
-        public static int GetCircleValues()
-        {
-            Console.WriteLine("Please enter the radius of the circle:");
-            int circleRadius = int.Parse(Console.ReadLine());
-            return circleRadius;
-        }
-
-        public static double CalcCircleArea()
-        {
-            double pi = Math.PI;
-            return pi * (GetCircleValues() * GetCircleValues());
-        }
-    }
-
+ 
 
 
     class Program
     {
+        static string calcType;
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the area machine");
             Console.WriteLine("Would you like to calculate the area of a circle or square? type circle or square into the console");
-            string calcType = Console.ReadLine();
+            calcType = Console.ReadLine();
 
             switch (calcType)
             {
