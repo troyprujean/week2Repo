@@ -11,6 +11,7 @@ namespace taskMenu
     public class Program
     {
         static int menuChoice;
+        static int menuChoice2;
         
         static void Main()
         {
@@ -52,7 +53,33 @@ namespace taskMenu
                     case 3:
                         break;
                 }
-
+                bool isNumber2 = false;
+                while (!isNumber2)
+                {
+                    Console.WriteLine("Would you like to continue using the calculator program?");
+                    Console.WriteLine("(1) Yes");
+                    Console.WriteLine("(2) No - Exit");
+                    string userInput = Console.ReadLine();
+                    if (int.TryParse(userInput, out menuChoice2))
+                    {
+                        if (menuChoice2 > 2)
+                        {
+                            Console.WriteLine("Invalid input, please try again");
+                            isNumber2 = false;
+                        }
+                        else isNumber2 = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid input, please try again");
+                        isNumber2 = false;
+                    }
+                    if (menuChoice2 == 1)
+                    {
+                        repeat = false;
+                    }
+                    else repeat = true;
+                }
             }
         }
     }
