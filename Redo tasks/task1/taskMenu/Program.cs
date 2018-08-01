@@ -10,40 +10,50 @@ namespace taskMenu
 {
     public class Program
     {
-        static string menuChoice;
+        static int menuChoice;
         
         static void Main()
         {
+            bool repeat = false;
             Console.WriteLine("Welcome to Troy's calculator");
-            do
+            while (!repeat)
             {
-                Console.WriteLine("Please enter one of the options below");
-                Console.WriteLine("(simple) Simple calculator");
-                Console.WriteLine("(area) Area calculator");
-                Console.WriteLine("(exit) Exit");
-                menuChoice = Console.ReadLine();
-
-                if (menuChoice != "simple" || menuChoice != "area" || menuChoice != "exit")
+                bool isNumber = false;
+                while (!isNumber)
                 {
-                    Console.WriteLine("Incorrect input, please press any key and then try again");
-                    Console.ReadLine();
-                    Console.Clear();
-                }
-                else
-                {
-                    switch (menuChoice)
+                    Console.WriteLine("Please enter one of the options below");
+                    Console.WriteLine("(1) Simple calculator");
+                    Console.WriteLine("(2) Area calculator");
+                    Console.WriteLine("(3) Exit");
+                    string userInput = Console.ReadLine();
+                    if (int.TryParse(userInput, out menuChoice))
                     {
-                        case "simple":
-                            task1.Program.Main();
-                            break;
-                        case "area":
-                            task2.Program.Main();
-                            break;
-                        case "exit":
-                            break;
+                        if (menuChoice > 3)
+                        {
+                            Console.WriteLine("Invalid input, please try again");
+                            isNumber = false;
+                        }
+                        else isNumber = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid input, please try again");
+                        isNumber = false;
                     }
                 }
-            } while (menuChoice != "simple" || menuChoice != "area" || menuChoice != "exit");
+                switch (menuChoice)
+                {
+                    case 1:
+                        task1.Program.Main();
+                        break;
+                    case 2:
+                        task2.Program.Main();
+                        break;
+                    case 3:
+                        break;
+                }
+
+            }
         }
     }
 }
